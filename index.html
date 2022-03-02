@@ -1,4 +1,82 @@
-<head>Yoneda Personal Site</head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  color: #dcddde;
+  background-color: #202020;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  color: #999999;
+  background-color: #161616;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #999999;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #000;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #000;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
 <body>
-	HelloHelloHelloHelloHello
+
+<div class="sidebar">
+  <a class="active" href="#home">信夫</a>
+  <a href="#news">Music</a>
+  <a href="#contact">Microscopy</a>
+  <a href="#about">Genetics</a> <a href="#about">Chemistry</a>
+</div>
+
+<div class="content">
+  <h2>信夫 Yoneda Lemma</h2>
+  <p>I am a czech artist, hobby scientist and educator.</p>
+  <p>This site serves as a main hub, crosslinking other platforms that I use.</p>
+  <p>I would love to dedicate every waking hour to my mission of creating something of a value other then just money, so please consider support via my Patreon or Paypal.</p>
+</div>
+
 </body>
+</html>
